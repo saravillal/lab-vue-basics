@@ -2,13 +2,15 @@
   <nav>
     <h1>NavBar</h1>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/">ToDo</router-link>
   </nav>
   <router-view/>
   <footer>
     <h2>Footer</h2>
      <router-link to="/">Home</router-link> |
-     <router-link to="/about">About</router-link>
+     <router-link to="/about">About</router-link> |
+     <router-link to="/about">ToDo</router-link>
   </footer>
 </template>
 
@@ -31,6 +33,19 @@ nav a {
 }
 
 nav a.router-link-exact-active {
+  color: #42b983;
+}
+
+footer {
+  padding: 30px;
+  }
+
+footer a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+footer a.router-link-exact-active {
   color: #42b983;
 }
 </style>
