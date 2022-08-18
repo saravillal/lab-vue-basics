@@ -1,9 +1,16 @@
 <template>
-    <h1>body text</h1>
+<h1> Body Text </h1>
+   <button @click="count++">
+      You clicked me {{ count }} times.
+    </button>`
 </template>
 
 <script>
 export default {
-  name: 'BodyText',
+  data() {
+    return {
+      count: 0,
+    };
+  },
 };
 </script>
